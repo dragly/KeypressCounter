@@ -7,7 +7,7 @@ from xlib import XEvents
 
 class KbdCounter(object):
     def __init__(self, user):
-        self.dt = 2
+        self.dt = 60
         self.user = user
         now = time.time()
         self.nextsave = now + self.dt  
