@@ -61,6 +61,9 @@ class KbdCounter(object):
         except KeyboardInterrupt:
             events.stop_listening()
             self.save()
+            
+        except:
+            print "Caught exception, probably not connected to the interwebs..."
 
             
                     
